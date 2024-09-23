@@ -15,7 +15,7 @@ func displayTitle() {
     print(" ██║     ██╔══██║██╔══╝  ╚════██║╚════██║")
     print(" ╚██████╗██║  ██║███████╗███████║███████║")
     print("  ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝")
-    print("                                       Now built in SWIFT!")
+    print("               Now built in SWIFT!")
 }
 
 func displayBoard() {
