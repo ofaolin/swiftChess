@@ -15,7 +15,7 @@ func displayTitle() {
     print(" ██║     ██╔══██║██╔══╝  ╚════██║╚════██║")
     print(" ╚██████╗██║  ██║███████╗███████║███████║")
     print("  ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝")
-    print("               By: Tyler Phalen, Now built in SWIFT!")
+    print("               By: Tyler Phalen, Now built in SWIFT! and supporting UCI")
 }
 
 func displayBoard() {
