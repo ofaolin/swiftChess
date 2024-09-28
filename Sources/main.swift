@@ -33,6 +33,38 @@ func displayBoard() {
         }
     }
 }
+func printChessBoard() {
+    let whitePieces = ["♜", "♞", "♝", "♛", "♚", "♝", "♞", "♜"]
+    let blackPieces = ["♖", "♘", "♗", "♕", "♔", "♗", "♘", "♖"]
+
+    print("    a   b   c   d   e   f   g   h")
+    print("  ┌───┬───┬───┬───┬───┬───┬───┬───┐")
+
+    for row in 0..<8 {
+        print("\(8-row) │", terminator: "")
+        for col in 0..<8 {
+            var piece = " "
+            if row == 1 {
+                piece = "♙"
+            } else if row == 6 {
+                piece = "♟"
+            } else if row == 0 {
+                piece = blackPieces[col]
+            } else if row == 7 {
+                piece = whitePieces[col]
+            }
+            print(" \(piece) │", terminator: "")
+        }
+        print(" \(8-row)")
+
+        if row < 7 {
+            print("  ├───┼───┼───┼───┼───┼───┼───┼───┤")
+        }
+    }
+
+    print("  └───┴───┴───┴───┴───┴───┴───┴───┘")
+    print("    a   b   c   d   e   f   g   h")
+}
 
 func runMenu() -> Int {
     var selector = 3
@@ -69,7 +101,7 @@ func loadSave() {
 func newGame() {
     clearScreen()
     print("Here is the fancy, shiny new board")
-    displayBoard()
+    printChessBoard()
 }
 
 func gameSelector(selector: Int) {
